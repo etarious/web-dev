@@ -1,0 +1,47 @@
+h1, span, a {
+    background-color: red;
+    font-size: 100px;
+}
+
+/* div a{
+    color: indigo;
+} */
+
+.rem{
+    font-size: 5rem;
+}
+
+html{
+    font-size: 50px;
+}
+
+div>a{
+    background-color: green;
+    font-size: medium;
+    border: 2px solid red;
+    color: white;
+    padding: 10px;
+    margin-left: 50px;
+}
+
+div.try{
+    background-color: yellow;
+}
+
+div.try>a{
+    color: purple;
+}
+
+span.try-me:hover{
+    color: white;
+    transition: ease-in-out 0.3s;
+    background-color: green;
+}
+
+p[change="good"] {
+    color: green;
+}
+
+p[change="bad"] {
+    color: red;
+}

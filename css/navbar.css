@@ -1,0 +1,243 @@
+html{
+    background-color: rgb(236, 236, 236);
+}
+
+#sideBar{
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: green;
+    overflow-x: hidden;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.bar{
+    list-style: none;
+    line-height: 50px;
+    display: contents;
+}
+
+.anchor{
+    text-decoration: none;
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    margin: 20px 0px;
+    border-radius: 10px;
+    border: 1px solid red;
+}
+
+#mainContent{
+    margin-left: 200px;
+}
+
+#top{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav{
+    background-color: red;
+    margin-top: -15px;
+    left: 0px;
+    padding: 10px;
+}
+
+ul{
+    display: flex;
+}
+
+a>img{
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 50px;
+    border-radius: 50px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
+    transition: ease-in-out 0.3s;
+}
+
+a>img:hover{
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 30px;
+    border-radius: 50px;
+    box-shadow: 50px 50px 50px rgba(0, 0, 0, 0.3);
+    transition: ease-in-out 0.3s;
+}
+
+li{
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.nav-side>a{
+    background-color: green;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.nav-side{
+    float: right;
+    margin-top: -40px;
+    margin-right: 10px;
+}
+
+.me{
+    padding: 200px;
+}
+
+.top{
+    background-color: green;
+    color: white;
+    border: red;
+    border-radius: 50%;
+    padding: 20px;
+    position: fixed;
+    margin-top: 200px;
+    margin-left: 480px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.flex-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}   
+
+div[box]{
+    padding: 100px;
+    margin: 20px;
+}
+
+div[box='green']{
+    background-color: green;
+}
+
+div[box='red']{
+    background-color: red;
+}
+
+div[box='purple']{
+    background-color: purple;
+}
+
+div[box='white']{
+    background-color: white;
+}
+
+div[box='violet']{
+    background-color: violet;
+}
+
+div[box='brown']{
+    background-color: brown;
+}
+
+div[box='grey']{
+    background-color: grey;
+}
+
+div[box='indigo']{
+    background-color: indigo;
+}
+
+div[box='blue']{
+    background-color: blue;
+}
+
+div[box='yellow']{
+    background-color: yellow;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.item{
+    background-color: grey;
+    border: 1px solid black;
+}
+
+h1{
+    background-color: grey;
+    text-align: center;
+}
+
+.grid-layout-1{
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    column-gap: 20px;
+}
+
+.grid-lay-item{
+    background-color: grey;
+    text-align: center;
+    height: 500px;
+}
+
+footer{
+    background-color: grey;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    h1{
+        background-color: green;
+    }
+    .grid-layout-1{
+        display: block;
+    }
+    
+    .grid-lay-item{
+        background-color: grey;
+        text-align: center;
+        height: 500px;
+    }
+    
+    footer{
+        background-color: grey;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    h1{
+        background-color: red;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    h1{
+        background-color: yellow;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    h1{
+        background-color: blue;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    h1{
+        background-color: grey;
+    }
+}

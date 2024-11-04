@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form Validations</title>
+</head>
+<body>
+    
+
+    <h1>SIGNUP FORM</h1>
+
+    <div id="error" style="color: red;"></div>
+    <div id="success" style="color: green;"></div>
+
+    <form action="javascript:void(0)" method="post">
+        <div>
+            <label for="firstname">Enter Firstname:</label>
+            <input type="text" name="firstname" id="firstname" placeholder="Firstname" required>
+        </div>
+        <div>
+            <label for="lastname">Enter Lastname:</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Lastname" required>
+        </div>
+        <div>
+            <label for="email">Enter Email:</label>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+        </div>
+        <div>
+            <label for="password">Enter Password:</label>
+            <input type="password" name="password" id="password" maxlength="8" placeholder="Password" required>
+        </div>
+        <div></div>
+            <label for="confirm">Enter Confirm Password:</label>
+            <input type="password" name="confirm" id="confirm" maxlength="8" placeholder="Confirm Password" required>
+        </div><br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Signup" onclick="signup()">
+    </form>
+
+
+
+
+
+    <script src="./js/signup.js"></script>
+</body>
+</html>
