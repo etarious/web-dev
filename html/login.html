@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form Validations</title>
+</head>
+<body>
+
+    <script>
+        if (localStorage.getItem("loggedInUser") != null) {
+            window.location.href = "./welcome.html";
+        }
+    </script>
+    
+
+    <h1>LOGIN FORM</h1>
+
+    <div id="error" style="color: red;"></div>
+    <div id="success" style="color: green;"></div>
+
+    <form action="javascript:void(0)" method="post">
+        <div>
+            <label for="email">Enter Email:</label>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+        </div>
+        <div>
+            <label for="password">Enter Password:</label>
+            <input type="password" name="password" id="password" maxlength="8" placeholder="Password" required>
+        </div>
+        <div>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Login" onclick="login()">
+        </div>
+        
+    </form>
+
+
+
+
+
+    <script src="./js/login.js"></script>
+</body>
+</html>

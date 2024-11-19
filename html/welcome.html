@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+</head>
+<body>
+    <script>
+        if (localStorage.getItem("loggedInUser") == null) {
+            window.location.href = "./login.html";
+        }
+    </script>
+    <h1>Welcome <span id="welcome-name">User's Firstname goes here</span></h1>
+
+    <h3>User Details</h3>
+    <ul>
+        <li>Firstname: <span id="firstname">User's firstname</span></li>
+        <li>Lastname: <span id="lastname">User's lastname</span></li>
+        <li>Email: <span id="email">User's email</span></li>
+    </ul>
+
+    <button onclick="logout()">Logout</button>
+
+
+
+    <script src="./js/jQuery.js"></script>
+    <script src="./js/welcome.js"></script>
+</body>
+</html>
